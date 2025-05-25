@@ -1,0 +1,5 @@
+docs/
+.cursor/
+__pycache__/
+venv/
+.env
