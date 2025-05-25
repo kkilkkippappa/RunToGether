@@ -33,6 +33,9 @@ python -m venv virtual_env
 # (필요시) Python 3.13.3 버전 명시
 python3.13 -m venv venv
 
+(필요하다면 가상환경폴더로 이동)
+(window) cd "가상환경폴더 절대경로"
+
 # 가상환경 활성화 (Windows)
 venv\Scripts\activate
 # 가상환경 활성화 (Mac/Linux)
@@ -50,6 +53,7 @@ source venv/bin/deactivate
 pip install -r requirements.txt
 ```
 ### 4️⃣ FastAPI 서버 실행
+주의 : fastapi 서버실행은 타 cmd 창(가상환경 실행)에서 Run을 추천
 ```bash
 uvicorn server:app --reload --host 0.0.0.0 --port 8000
 ```
