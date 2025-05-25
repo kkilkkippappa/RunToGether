@@ -1,12 +1,11 @@
-# 러닝페어 개요🏃‍♂️
+# RunToGether 개요🏃‍♂️
 
-**러닝페어**는 Kivy와 FastAPI를 기반으로 한 AI 러닝(마라톤) 보조 앱입니다.  
-GPS 기반 위치 정보와 기상청 날씨 데이터를 활용해 러닝 적합도를 판단하고,  
-ChatGPT API를 통해 개인 맞춤형 페이스메이커 훈련 계획을 제공합니다.  
-또한, 최신 마라톤 대회 정보를 자동으로 크롤링해 제공합니다.
+RunToGether은 Kivy와 FastAPI를 기반으로 한 AI 러닝(마라톤) 보조 앱으로, 2025년 성균관대학교 러닝페어 출품작입니다.
+GPS 기반 위치 정보와 기상청 날씨 데이터를 활용해 러닝 적합도를 판단하고, 
+ChatGPT API를 통해 개인 맞춤형 페이스메이커 훈련 계획을 제공합니다.
+최신 마라톤 대회 정보를 자동으로 크롤링해 제공합니다.
 
 ---
-
 ## 📌 주요 기능
 
 - **GPS 위치 추적**: Plyer를 활용해 실시간 GPS 위치 확인
@@ -15,8 +14,6 @@ ChatGPT API를 통해 개인 맞춤형 페이스메이커 훈련 계획을 제�
 - **마라톤 대회 정보**: Selenium으로 크롤링한 최신 마라톤 대회 정보(대회명, 날짜, 장소) 제공
 - **서버-앱 연동**: FastAPI 백엔드와 Kivy 앱 간 데이터 통신
 
----
-
 ## 📌 사용 기술
 * Python (3.10+)
 * Kivy / KivyMD
@@ -24,7 +21,6 @@ ChatGPT API를 통해 개인 맞춤형 페이스메이커 훈련 계획을 제�
 * Selenium
 * ChatGPT API (OpenAI)
 ---
-
 ## ⚙️ 설치 및 실행 방법
 
 ### 1️⃣ Python 가상환경 설정
@@ -38,7 +34,7 @@ venv\Scripts\activate
 
 # 가상환경 활성화 (Mac/Linux)
 source venv/bin/activate
-
+```
 ### 번외. 가상환경 비활성화
 ```bash
 # 가상환경 비활성화 (Windows)
@@ -58,5 +54,4 @@ uvicorn server:app --reload --host 0.0.0.0 --port 8000
 ### 5️⃣ Kivy 앱 실행
 ```bash
 python main.py
-아니면 IDE에서 실행
-```
+#아니면 IDE에서 실행
