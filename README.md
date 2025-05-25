@@ -15,7 +15,7 @@ ChatGPT API를 통해 개인 맞춤형 페이스메이커 훈련 계획을 제�
 - **서버-앱 연동**: FastAPI 백엔드와 Kivy 앱 간 데이터 통신
 
 ## 📌 사용 기술
-* Python (3.10+)
+* Python (3.13)
 * Kivy / KivyMD
 * FastAPI
 * Selenium
@@ -27,11 +27,14 @@ ChatGPT API를 통해 개인 맞춤형 페이스메이커 훈련 계획을 제�
 
 ```bash
 # 가상환경 생성
-python -m venv venv
+python -m venv [가상환경폴더명]
+[예시]
+python -m venv virtual_env
+# (필요시) Python 3.13.3 버전 명시
+python3.13 -m venv venv
 
 # 가상환경 활성화 (Windows)
 venv\Scripts\activate
-
 # 가상환경 활성화 (Mac/Linux)
 source venv/bin/activate
 ```
@@ -39,7 +42,6 @@ source venv/bin/activate
 ```bash
 # 가상환경 비활성화 (Windows)
 venv\Scripts\deactivate
-
 # 가상환경 비활성화 (Mac/Linux)
 source venv/bin/deactivate
 ```
